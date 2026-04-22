@@ -35,14 +35,7 @@ void setup() {
     String savedPass = mainPrefs.getString("pass", "");
     mainPrefs.end();
     sensor_t * s = esp_camera_sensor_get();
-// if (s != NULL) {
-//     // s->set_whitebal(s, 1);       // Bật tự động cân bằng trắng
-//     // s->set_awb_gain(s, 1);       // Bật gain cân bằng trắng
-//     // s->set_saturation(s, 2);     // Tăng bão hòa màu (giúp màu Đỏ, Xanh đậm và chân thực hơn)
-//     // s->set_brightness(s, 0);     // Độ sáng mặc định
-//     // s->set_contrast(s, 1);       // Tăng độ tương phản lên một chút
-    
-// }
+
     if (savedSSID == "") {
         isSetupMode = true;
         startWifiSetupAP();
